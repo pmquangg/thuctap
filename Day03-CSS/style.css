@@ -1,0 +1,94 @@
+nav , nav ul , nav li , nav a {
+    margin: 0;
+    padding: 0%; /*cách đầu dòng*/
+    border: none; /* Độ nét của viền*/
+     outline: none; /*Thẻ loại viền */
+    
+}
+
+nav{
+    height: 40px; 
+    background: blanchedalmond; 
+    background: -webkit-linear-gradient(top, rgb(253, 235, 253) 0%,#eccece 100%);
+    background: -moz-linear-gradient(top, rgb(253, 235, 253) 0%,#eccece 100%);
+    background: -o-linear-gradient(top, rgb(253, 235, 253) 0%,#eccece 100%);
+    background: linear-gradient(top, rgb(253, 235, 253) 0%,#eccece 100%);
+
+    /* tạo bo tròn */
+    -webkit-border-radius: 5px ;
+    -moz-border-radius:5px ;
+    border-radius: 5px;
+}
+nav ul li{
+    position: relative;
+    list-style: none;
+    float: left;  
+    display: block; /*Hiển thị dưới dạng khối*/;
+    height: 40px;
+
+}
+
+nav ul li a {
+    display: block;
+    padding: 0 14px; /* trên dưới = 0 ; trải phải =14 */
+    margin: 6px 0;
+    line-height: 28px;
+    text-decoration: none;
+    /* tạo đường kẻ trái , phải */
+    border-left: 1px solid #393942;
+    border-right: 1px solid #4f5058;
+
+    /* Chọn chữ */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+
+    /* màu sắc*/
+    color: #ec6262;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 6);
+
+    /* Hiệu ứng */
+    -webkit-transition: color .2s ease-in-out;
+    -moz-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
+    -ms-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+}
+/* bỏ đường kẻ phần tử đầu và cuối , tạo hiệu ứng hover chuột đến menu */
+nav ul li:first-child a{border-left: none;}
+nav ul li:last-child a{border-right: none;}
+nav ul li:hover > a {color:#8fde62;}
+
+ul.submenu{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100px;
+    height: 0;
+
+    opacity: 0;
+    background: #e6cadf;
+
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+
+    -webkit-transition: height 0.25s ease .1s, opacity 0.25s ease .1s;
+    -moz-transition: height 0.25s ease .1s, opacity 0.25s ease .1s;
+    -o-transition: height 0.25s ease .1s, opacity 0.25s ease .1s;
+    -ms-transition: height 0.25s ease .1s, opacity 0.25s ease .1s;
+    transition: height 0.25s ease .1s, opacity 0.25s ease .1s;
+}
+
+nav ul li:hover > ul.submenu{
+    opacity: 10;
+    height: auto;
+}
+.submenu li a {
+    border: none;
+}
+.submenu li{
+    width: 100%;
+    border-bottom: 1px solid #393942;
+}
+.submenu.li:last-child{border-bottom: none;}
