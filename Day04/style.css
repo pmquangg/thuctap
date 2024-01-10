@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: none;
+    list-style: none;
+    color:rgb(62, 62, 185);
+}
+html{
+    font-family: Helvetica;
+    font-size: 20px;
+}
+
+/* header */
+nav{
+    display:flex; /* chỉnh chữ từ hàng dọc -> hàng ngang */
+}
+
+
+.main-menu{ /* Chỉnh thẻ ul có class main-menu*/
+    display: flex; /* như trên*/
+    width: 100%;
+    font-weight: bold; /* độ đậm của chữ*/
+    margin-right: 250px; /* lề phải */
+    margin-top: 65px; /* lề trên */
+}
+.option{
+    color:#000088;
+    text-decoration:none;
+}
+
+.main-menu .option-menu{
+    padding: 8px 15px; /* chỉnh độ giãn của các chữ*/
+}
+
+.main-menu .option-menu:hover a{ /* hover :thay đổi màu khi trỏ chuột vào chữ  */
+    color:cadetblue;
+}
+
+.img-logo{
+    margin-top: 65px;
+    margin-left: 200px;
+    padding-right: 150px;
+}
+
+/*---Work CSSS----*/
+.vn{
+    text-decoration: revert;
+    color: #c5ad3d;
+}
+.container{
+    overflow: auto;
+}
+.text{
+    float: left;
+    width: 50%;
+    padding: 20px;
+    padding-top: 80px;
+}
+.text h2{
+    color:rebeccapurple;
+    font-weight: bold;
+}
+.image{
+    float:left;
+    width: 50%;
+    padding: 20px;
+}
+button{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #c79292;
+    color: white;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
