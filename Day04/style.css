@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: none;
+    list-style: none;
+    color:rgb(62, 62, 185);
+}
+html{
+    font-family: Helvetica;
+    font-size: 20px;
+}
+.top-100{
+    margin-top: 100px;
+}
+
+.alg-center{
+    text-align: center;
+}
+.d-flex{
+    display: flex;
+}
+.w-100{
+    width: 100%;
+}
+/* header */
+nav{
+    display:flex; /* chỉnh chữ từ hàng dọc -> hàng ngang */
+}
+
+
+.main-menu{ /* Chỉnh thẻ ul có class main-menu*/
+    display: flex; /* như trên*/
+    width: 100%;
+    font-weight: bold; /* độ đậm của chữ*/
+    margin-right: 250px; /* lề phải */
+    margin-top: 65px; /* lề trên */
+}
+.option{
+    color:#000088;
+    text-decoration:none;
+}
+
+.main-menu .option-menu{
+    padding: 8px 15px; /* chỉnh độ giãn của các chữ*/
+}
+
+.main-menu .option-menu:hover a{ /* hover :thay đổi màu khi trỏ chuột vào chữ  */
+    color:cadetblue;
+}
+
+.img-logo{
+    margin-top: 65px;
+    margin-left: 200px;
+    padding-right: 150px;
+}
+.menu-title{
+    margin-top: 100px;
+    margin-left: 200px;
+    width: 600px;
+}
+.title-m{
+    color: white;
+    font-size: 32px;
+    margin: 0px 0px 16px;
+}
+.text-m{
+    color: white;
+    width: 500px;
+    font-size: 17px;
+    
+}
+.btn-banner{
+    margin-top: 35px;
+    margin-bottom: 200px;
+    padding: 8px 10px;
+    color: rgb(0, 13, 255);
+    background-color: white;
+    font-size: 20px;
+    border: none;
+}
+/*---Work CSSS----*/
+.vn{
+    text-decoration: revert;
+    color: #c5ad3d;
+}
+.container{
+    overflow: auto;
+}
+.text{
+    float: left;
+    width: 50%;
+    padding: 20px;
+    padding-top: 80px;
+}
+.text h2{
+    color:rebeccapurple;
+    font-weight: bold;
+}
+.image{
+    float:left;
+    width: 50%;
+    padding: 20px;
+}
+button{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #c79292;
+    color: white;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+.recent{
+    text-align: center;
+    margin-top: 2.5rem;
+}
+.recent h4{
+    font-weight: bold;
+}
+.list-work{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    width: 400px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 50px;
+}
+.card-content{
+    margin-top: 10px;
+}
+.card-content h3{
+    font-size: 18px;
+    color:#8e83ba;
+}
+.card-content p{
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 25px;
+}
+.card-content .read-more{
+    display: block;
+    margin-top: 10px;
+    color:red;
+    font-weight: bold;
+
+}
+.recent-bt {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 2rem;
+    
+}
+.container-pp{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.flex-container{
+    display: flex;
+}
+.card-pp{
+    width: 300px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+.card-content-pp {
+    margin-top: 10px;
+    text-align: center;
+}
+.card-content-pp p {
+    margin-top: 5px;
+    font-size: 22px;
+}
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.left-section,
+.right-section {
+  width: 50%;
+  padding: 10px;
+}
