@@ -1,0 +1,15 @@
+*{
+    margin-top: 2px;
+    padding: 0%;
+    border: 0;
+    
+}
+.menu{
+    width: 100px;
+  
+    align-items: center;    
+    display: flex;
+}
+.title{
+    display: flex;
+ }

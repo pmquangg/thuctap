@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: none;
+    list-style: none;
+    
+}
+.main-menu {
+    display: flex;
+    width: 100%;
+    font-weight: bold;
+    margin-right: 250px;
+    margin-top: 0px;
+    
+}
+li {
+    padding: 8px 20px;
+}
+.logo {
+  width: 30%;
+  display: flex;
+}
+nav{
+    margin: 50px;
+    display: flex;
+}
+
+.menu{
+    padding:10px;
+}
