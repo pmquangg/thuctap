@@ -1,0 +1,30 @@
+nav #navTop{
+    width: 960px; /* thiesett lập chiều rộng cho menus */
+    margin: 0 auto; /* đặt menu luôn hiện thị giữa màn hình */
+    background: #ccc; /* thiết lập màu nền cho menus */
+    height: 40px; /* thiết lập chiều cao cho menus */
+}
+nav #navTop ul li >ul{
+    position: absolute;
+    width: 150px;
+    background: #666;
+}
+nav #navTop ul{ /* thiết lập cho tất cả thẻ UL nằm trong #navTop */
+    list-style: none; /* bỏ style mặc định của yl li */
+    padding: 0; /* thiết lập padding về 0 */
+    margin: 0; 
+    position: relative;
+}
+nav #navTop ul li {
+    float: left;
+    border-right: solid 1px #fff;
+}
+nav#navTop ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 10px 30px; /* thiết lập padding trên dưới phải trái cho thẻ a */
+}
+.selected,nav#navTop ul li a:hover{
+    background: red;
+    color:#fff
+}
